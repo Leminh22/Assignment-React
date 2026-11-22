@@ -1,5 +1,4 @@
-# Bài làm : Assignment-React
-# Họ và tên : Lê Hồng Minh
+# Bài làm : Assignment-React | Họ và tên : Lê Hồng Minh
 
 # ClubEvents: Quản lý sự kiện câu lạc bộ
 
@@ -9,7 +8,7 @@
 
 Xem video demo toàn bộ chức năng tại đây: **[Google Drive: Video giới thiệu ClubEvents](https://drive.google.com/file/d/1dFweSZBY1v6Q0uBVqO8kfzaeQhct-YVg/view?usp=drive_link)**
 
-## 📸 Ảnh chụp màn hình
+## Ảnh chụp màn hình
 
 ### Trang danh sách sự kiện
 Trang danh sách (docs/screenshots/danh-sach.png)
@@ -47,11 +46,13 @@ Giao diện mobile (docs/screenshots/mobile.png)
 ## Cần có gì để chạy?
 
 
-**Node.js**  Phiên bản 20.19 trở lên (hoặc 22.12+), vì Vite yêu cầu. Kiểm tra bằng `node -v`
-**npm** | Đi kèm Node.js. Kiểm tra bằng `npm -v`
-**Trình duyệt**  Chrome, Edge, Firefox bản mới
-**Cổng trống** `3000` (API) và `5173` (web). Nếu bị chiếm, đóng chương trình đang dùng cổng đó
-**Kết nối mạng**  Chỉ cần lúc `npm install` và khi tải font Google Fonts (DM Sans, Manrope)
+| Yêu cầu | Chi tiết |
+|---|---|
+| **Node.js** | Phiên bản 20.19 trở lên (hoặc 22.12+), vì Vite yêu cầu. Kiểm tra bằng `node -v` |
+| **npm** | Đi kèm Node.js. Kiểm tra bằng `npm -v` |
+| **Trình duyệt** | Chrome, Edge, Firefox bản mới |
+| **Cổng trống** | `3000` (API) và `5173` (web). Nếu bị chiếm, đóng chương trình đang dùng cổng đó |
+| **Kết nối mạng** | Chỉ cần lúc `npm install` và khi tải font Google Fonts (DM Sans, Manrope) |
 
 Không cần cài database, không cần cấu hình biến môi trường.
 
@@ -60,20 +61,21 @@ Không cần cài database, không cần cấu hình biến môi trường.
 **Bước 1:** tải mã nguồn và cài thư viện
 
 
-git clone ĐIỀN_LINK_REPO
+
 cd club-events
 npm install
 
 
 **Bước 2:** mở **hai terminal** cùng ở thư mục dự án, chạy song song:
 
-
+```
 # Terminal 1: chạy API (json-server)
 npm run api
-
+```
+```
 # Terminal 2: chạy giao diện web (Vite)
 npm run dev
-
+```
 **Bước 3:** mở trình duyệt vào địa chỉ Vite in ra ở Terminal 2 (`http://localhost:5173`).
 
 
@@ -84,7 +86,7 @@ npm run dev
 
 ##  Cấu trúc code
 
-
+```
 club-events/
 ├── server/db.json        # Dữ liệu json-server
 ├── docs/screenshots/     # Ảnh chụp màn hình cho README
@@ -96,7 +98,7 @@ club-events/
     ├── utils/            # Validate (validateEvent) và xử lý ngày
     ├── types/            # Kiểu sự kiện và lỗi form
     └── index.css         # Tailwind v4: bảng màu (@theme), font, style nền
-
+```
 
 **Ghi chú về cách tổ chức:**
 
