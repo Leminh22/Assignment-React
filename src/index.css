@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* Nền và chữ */
+    --color-canvas: #f5f8fc;
+    --color-ink: #14243a;
+    --color-muted: #64748b;
+
+    /* Màu chủ đạo: Navy Blue */
+    --color-sea: #4259da;
+    --color-sea-dark: #20802b;
+    --color-sea-soft: #e8eff8;
+
+    /* Màu nhấn: Coral Orange */
+    --color-coral: #f4775b;
+    --color-coral-dark: #dc5f46;
+    --color-coral-soft: #fff0eb;
+
+    /* Màu phụ */
+    --color-navy: #17365d;
+    --color-navy-dark: #102846;
+    --color-navy-soft: #e8eff8;
+    --color-peach: #fff0eb;
+    --color-lilac: #edf2f9;
+
+    /* Font */
+    --font-sans: 'DM Sans', sans-serif;
+    --font-heading: Manrope, sans-serif;
+}
+
+@layer base {
+    :root {
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        @apply min-h-screen min-w-[320px] bg-canvas font-sans text-ink antialiased;
+    }
+
+    button, a {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+
+    button:disabled {
+        @apply cursor-not-allowed opacity-60;
+    }
+
+    h1, h2, h3 {
+        @apply font-heading;
+        letter-spacing: -0.035em;
+    }
+}
