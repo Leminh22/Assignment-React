@@ -8,8 +8,6 @@
 
 Xem video demo toàn bộ chức năng tại đây: **[Google Drive: Video giới thiệu ClubEvents](https://drive.google.com/file/d/1dFweSZBY1v6Q0uBVqO8kfzaeQhct-YVg/view?usp=drive_link)**
 
-## Ảnh chụp màn hình
-
 ### Trang danh sách sự kiện
 Trang danh sách (docs/screenshots/danh-sach.png)
 ### Form có lỗi validate
@@ -17,7 +15,6 @@ Form báo lỗi (docs/screenshots/form-loi-validate.png)
 ### Giao diện trên điện thoại
 Giao diện mobile (docs/screenshots/mobile.png)
 
-### Dự án có gì?
 
 **Chức năng**
 
